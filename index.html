@@ -24,7 +24,7 @@
 
 	  	<form action='#' method="post">
 	  		
-	  		<fieldset>
+	  		<fieldset id="contact-info">
 	  			
 	  			<Legend>Contact Information</legend>
 	  			
@@ -102,7 +102,7 @@
 	  				<input type="text" id="zip" name="user_zip_code">
 	  		</fieldset>
 
-	  		<fieldset>
+	  		<fieldset id="newsletter">
 	  			
 	  			<legend>Newsletter</legend>
 	  			<span class="newsletter-span">Select the newsletters yout would like to recieve</span>
@@ -117,9 +117,13 @@
 
 	  					<input type="radio" id="format_html" value="html_format" name="newsletter_format"><label for="format_html">HTML</label><br>
 	  					<input type="radio" id="format_txt" value="txt_format" name="newsletter_format"><label for="format_txt">Plain Text</label>
-
+	  				
+	  				<label>Other topics you'd like to hear about</label>
+	  					<textarea id="other_topics" name="other_topics"></textarea>
 	  		</fieldset>
-
+	  		
+	  		<button type="submit">Sign Up</button>
+	  		<span class="copyright">Copyright The Code Review</span>
 	  	</form>
 	  </div>
   </body>
