@@ -85,23 +85,27 @@ select {
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
 	outline: none;
 	border: 2px solid #46698B;
 }
 
-::-webkit-input-placeholder { /*DAVE - can we discuss this please?*/ 
+::-webkit-input-placeholder { /*DAVE - can we discuss this?*/ 
 text-align: right;
-padding-right: 15px; 
+padding-right: 15px;
+font-weight: 300;
+font-style: italic; 
 
-}
-
-.choose-state {
-	background-color: #B3B8BB;
 }
 
 #zip {
 	width: 50%;
+}
+
+select#state { 
+	color: #A4A9AE;
+	font-weight: 300;
 }
 
 label[for="html_news"],   /**QUESTION FOR DAVE - WHAT IS BEST WAY TO IMPLEMENT THE INLINE CHECKBOX STYLING. SHOULD I WRAP EACH IN A DIV OR IS THIS A GOOD WAY TO DOING? **/
@@ -145,16 +149,17 @@ button[type="submit"] {
 	background-color: #4EBBB5;
 	border: none;
 	width: 100%;
-	height: 80px;
+	height: 70px;
 	border-radius: 5px;
 	color: white;
-	font-weight: bold;
+	font-weight: 400;
 	font-size: 1.3em;
 	display: block;
 }
 
 fieldset#newsletter {
 	border: none;
+	padding-bottom: 25px;
 }
 
 /**FOOTER**/
@@ -166,6 +171,52 @@ fieldset#newsletter {
 	font-style: italic;
 	color: #A4A9AE;
 	font-weight: 300;
+}
+
+/** MEDIA QUERIES **/
+
+@media (min-width: 1024px) {
+	
+	/* HEADER */
+
+	.main-wrapper {
+		width: 60%;
+	}
+
+	.form-title {
+		margin-top: 50px;
+	}
+
+	/* FORM STYLES */
+
+	legend {
+		margin-bottom: 25px;
+	}
+
+	fieldset#contact-info label {
+		display: inline-block;
+		width: 24%;
+	}
+
+	fieldset#contact-info input, 
+	select {
+		width: 75%;
+		margin-bottom: 15px;
+	}
+
+	#zip {
+		width: 30%;
+	}
+
+	fieldset#newsletter legend {
+		margin: 0;
+	}
+
+	button[type="submit"] {
+	height: 60px;
+	
+}
+
 }
 
 
