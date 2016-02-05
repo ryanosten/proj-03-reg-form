@@ -5,13 +5,12 @@ body {
 }
 
 .main-wrapper {
-	max-width: 90%;
+	width: 90%;
+	max-width: 500px;
 	margin: auto;
 }
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -74,10 +73,6 @@ label {
 	font-weight: 300;
 }
 
-label[for="name"]{
-	margin-top:35px;
-}
-
 input,
 select {
 	width: 100%;
@@ -86,6 +81,10 @@ select {
 	border: none;
 	background-color: #EFF0F1;
 	padding-left: 20px; 
+}
+
+label[for="name"]{
+	margin-top: 35px;
 }
 
 input:focus,
@@ -106,6 +105,8 @@ font-style: italic;
 #zip {
 	width: 50%;
 }
+
+/**SELECT DROPDOWN **/
 
 .styled-select select {
    background: transparent;
@@ -130,7 +131,9 @@ select#state {
 	font-weight: 300;
 }
 
-label[for="html_news"],   /**QUESTION FOR DAVE - WHAT IS BEST WAY TO IMPLEMENT THE INLINE CHECKBOX STYLING. SHOULD I WRAP EACH IN A DIV OR IS THIS A GOOD WAY TO DOING? **/
+/** CHECKBOXES **/
+
+label[for="html_news"],  
 label[for="css_news"],
 label[for="js_news"],
 label[for="format_html"],
@@ -139,12 +142,8 @@ label[for="format_txt"] {
 
 }
 
-
-
-
-
 input[type="checkbox"],
-input[type="radio"] { /**QUESTION FOR DAVE - HOW TO STYLE CHECKBOXES**/
+input[type="radio"] { 
 	margin-left: 0;
 	margin-right: 0;
 	display: inline;
@@ -177,6 +176,30 @@ input[type="checkbox"]:checked + label span {
 	padding-left: 30px;
 }
 
+/** RADIO BUTTONS **/
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"] + label span{
+	display: inline-block;
+	background: url(../images/radio.png) left top no-repeat;
+	vertical-align: middle;
+	cursor: pointer;
+	height: 25px;
+	padding-left: 30px;
+}
+
+input[type="radio"]:checked + label span {
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	background:url(../images/radio_checked.png) left top no-repeat;
+	padding-left: 30px;
+}
+
+/**TEXT AREA **/
 
 .newsletter-span {
 	margin: 25px 0;
@@ -194,6 +217,8 @@ textarea {
 	border-radius: 5px;
 	padding: 10px 15px;
 }
+
+/** SUBMIT BUTTON **/
 
 button[type="submit"] {
 	background-color: #4EBBB5;
@@ -231,6 +256,7 @@ fieldset#newsletter {
 
 	.main-wrapper {
 		width: 60%;
+		max-width: 800px;
 	}
 
 	.form-title {
