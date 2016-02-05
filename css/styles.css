@@ -295,7 +295,7 @@ fieldset#newsletter {
 		vertical-align: top;
 	}
 
-	#zip {
+	fieldset#contact-info #zip {
 		margin-top: 15px;
 		width: 30%;
 	}
