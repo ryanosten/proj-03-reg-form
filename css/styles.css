@@ -209,6 +209,14 @@ input[type="radio"]:checked + label span {
 	font-weight: 300;
 }
 
+.newsformat-label {
+	margin: 35px 0 25px;
+}
+
+label[for="other_topics"] {
+	margin-top: 35px;
+}
+
 textarea {
 	height: 125px;
 	width: 100%;
@@ -298,6 +306,10 @@ fieldset#newsletter {
 	fieldset#contact-info #zip {
 		margin-top: 15px;
 		width: 30%;
+	}
+
+	fieldset#newsletter {
+		margin-top: 50px;
 	}
 
 	fieldset#newsletter legend {
