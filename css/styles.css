@@ -87,14 +87,24 @@ label[for="name"]{
 	margin-top: 35px;
 }
 
-input:focus,
 textarea:focus,
 select:focus {
 	outline: none;
 	border: 2px solid #46698B;
 }
 
-::-webkit-input-placeholder { /*DAVE - can we discuss this?*/ 
+input {
+    transition: background 0.5s linear;
+}
+
+input:focus {
+	outline: none;
+	border: 2px solid #46698B;
+	background-color: #b9ffa4;
+}
+
+
+::-webkit-input-placeholder { /*DAVE - can we discuss this? what is webkit stuff? Also - what is 'blur' in 'exceeds expectations'? AND talk about 'select' issue on safari' */ 
 text-align: right;
 padding-right: 15px;
 font-weight: 300;
