@@ -68,7 +68,7 @@ legend {
 
 label {
 	display: block;
-	margin: 20px 0px 15px;
+	margin: 20px 0 15px;
 	color: #55687a;
 	font-weight: 300;
 }
@@ -262,7 +262,7 @@ fieldset#newsletter {
 
 /** MEDIA QUERIES **/
 
-@media (min-width: 1024px) {
+@media (min-width: 760px) {
 	
 	/* HEADER */
 
